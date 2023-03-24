@@ -28,10 +28,12 @@ const targetSum = 10;
 
 /**
  * approach 1
- * tc: O(n^2) sc: O(1)
  * two for loops
  */
 
+/**
+ * O(n^2) time | O(1) space
+ */
 const firstApproach = (array, targetSum) => {
   const result = [];
   for (let i = 0; i < array.length; i++) {

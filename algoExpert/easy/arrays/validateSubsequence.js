@@ -22,6 +22,9 @@ const sequence = [1, 6, -1, -1];
 const first = array[0];
 const second = sequence[1];
 let count = 0;
+/**
+ * O(n) time | O(1) space
+ */
 const firstApproach = (array, sequence) => {
   for (let i = 0; i < array.length; i++) {
     if (count === sequence.length) {

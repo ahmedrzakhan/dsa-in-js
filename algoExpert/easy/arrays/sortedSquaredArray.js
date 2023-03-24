@@ -15,7 +15,7 @@ O(n) time | O(n) space - where n is the length of the input array
 const array = [-10, -5, 0, 4, 10];
 
 /**
- * tc: O(nlogn) sc: O(n)
+ * O(nlogn) time | O(n) space
  */
 const firstApproach = () => {
   const result = array.map((ele) => ele ** 2).sort((a, b) => a - b);

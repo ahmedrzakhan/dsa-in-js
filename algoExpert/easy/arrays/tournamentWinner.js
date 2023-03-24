@@ -53,7 +53,9 @@ const competitions = [
 
 const results = [0, 0, 1];
 
-/** O(n) time | O(k) space */
+/**
+ * O(n) time | O(k) space
+ */
 const firstApproach = () => {
   const scoreboard = {};
   const leader = {

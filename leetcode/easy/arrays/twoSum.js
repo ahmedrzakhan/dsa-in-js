@@ -23,8 +23,11 @@ const targetSum = 6;
 
 /**
  * approach 1
- * tc: O(n^2) sc: O(1)
  * two for loops
+ */
+
+/**
+ * O(n^2) time | O(1) space
  */
 const firstApproach = function (array, targetSum) {
   const result = [];
@@ -42,13 +45,15 @@ console.log("firstApproach", firstApproach(array, targetSum));
 
 /**
  * approach 2
- * tc: O(n) sc: O(n)
  * x + y = targetSum
  * y = targetSum - x
  * x + y = 10
  * y = 10 - x
  */
 
+/**
+ * O(n) time | O(n) space
+ */
 const secondApproach = function (array, targetSum) {
   let records = {};
   for (let i = 0; i < array.length; i++) {
