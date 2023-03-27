@@ -1,4 +1,7 @@
 /**
+ * check leetcode/arrays/3Sum.js
+ */
+/**
 Write a function that takes in a non-empty array of distinct integers and an
 integer representing a target sum. The function should find all triplets in
 the array that sum up to the target sum and return a two-dimensional array of
@@ -35,6 +38,7 @@ targetSum: 0
 */
 
 const array = [12, 3, 1, 2, -6, 5, 0, -8, -1, 6, -5];
+// const array = [-1, 0, 1, 2, -1, -4];
 const targetSum = 0;
 
 /**
