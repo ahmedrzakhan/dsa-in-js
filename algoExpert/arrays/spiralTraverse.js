@@ -36,6 +36,9 @@ const array = [
 //   [9, 8, 7],
 // ];
 
+/**
+ * O(n) time | O(n) space
+ */
 const firstApproach = () => {
   let result = [];
   let startRow = 0;
