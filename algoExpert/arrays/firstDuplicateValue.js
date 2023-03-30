@@ -74,7 +74,6 @@ console.log("secondApproach", secondApproach());
  * O(n) time | O(1) space
  */
 const thirdApproach = () => {
-  const array = [2, 1, 5, 3, 3, 2, 4];
   for (let i = 0; i < array.length; i++) {
     const absValue = Math.abs(array[i]) - 1;
     if (array[absValue] < 0) {
