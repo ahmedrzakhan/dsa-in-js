@@ -94,3 +94,13 @@ const secondApproach = () => {
 };
 
 console.log("secondApproach", secondApproach());
+
+/**
+1. The approach involves sorting the array in ascending order to make it easier to eliminate duplicates.
+
+2. Then, we iterate through the array with three nested loops, considering each element as a possible first,
+second, and third number.
+
+3. For each triplet (i, j, k), we check if the sum of the three numbers is equal to the target sum. If it is,
+we add the triplet to the result array.
+ */

@@ -54,3 +54,33 @@ const firstApproach = () => {
 };
 
 console.log("firstApproach", firstApproach());
+
+/**
+1. First, the intervals are sorted based on the starting time. This is done to ensure that the algorithm
+can easily detect which intervals are overlapping.
+
+2. A new array mergedIntervals is created to store the merged intervals.
+
+3. The first interval in the sorted array is added to the mergedIntervals array.
+
+4. Starting from the second interval, the algorithm compares the start time of the current interval with
+the end time of the last interval in the mergedIntervals array.
+
+5. If the start time of the current interval is less than or equal to the end time of the last interval
+in the mergedIntervals array, then there is an overlap between the two intervals. In this case, the
+algorithm merges the two intervals by updating the end time of the last interval in the mergedIntervals
+array to be the maximum of the two end times.
+
+6. If the start time of the current interval is greater than the end time of the last interval in the
+mergedIntervals array, then there is no overlap between the two intervals. In this case, the algorithm
+adds the current interval to the mergedIntervals array.
+
+7. After processing all the intervals in the input array, the mergedIntervals array contains all the
+non-overlapping intervals.
+
+8. Finally, the mergedIntervals array is returned as the output of the algorithm.
+
+In summary, the algorithm works by iteratively comparing each interval with the last interval in the
+merged array to detect overlaps, and merging the intervals if necessary. This process results in a new
+array of non-overlapping intervals.
+ */

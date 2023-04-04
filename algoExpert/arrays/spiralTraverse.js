@@ -98,3 +98,25 @@ console.log("firstApproach", firstApproach());
  * while (startRow < endRow && startCol < endCol works for square matrices
  * misses 13, 14, 15 in above example non square matrix
  */
+
+/**
+1. This function implements the "spiral order" traversal of a two-dimensional array. The idea is to start at the
+top-left corner of the array and "spiral" inwards, traversing the outermost layer of the array first and then
+moving inwards to the next layer.
+
+2. The function uses four pointers to keep track of the boundaries of the current layer of the array: startRow,
+endRow, startCol, and endCol. It then iterates through the array in four steps:
+
+3. Traverse right along the current layer, from startCol to endCol, and add each element to the result array.
+
+4. Traverse down along the current layer, from startRow to endRow, and add each element to the result array.
+
+5. Traverse left along the current layer, from endCol to startCol, but only if there are still rows left to
+traverse (startRow <= endRow). Add each element to the result array.
+
+6. Traverse up along the current layer, from endRow to startRow, but only if there are still columns left to
+traverse (startCol <= endCol). Add each element to the result array.
+
+7. The function repeats this process until all elements of the array have been added to the result array in
+spiral order.
+ */

@@ -85,3 +85,14 @@ const thirdApproach = () => {
 };
 
 console.log("thirdApproach", thirdApproach());
+
+/**
+1. Loop through the array using a for loop, and for each element, calculate its absolute value
+ minus one and store it in a variable called absValue.
+2. Check if the element at the index equal to absValue is already negative. If it is, that means
+ we have already seen this value before, so return the absolute value of the current element.
+3. If the element at the index equal to absValue is not already negative, set that element to its
+negative value. This marks it as having been seen before.
+4. Repeat steps 2-3 for each element in the array.
+5. If the algorithm has checked all the elements in the array and has not found a duplicate, return -1.
+ */

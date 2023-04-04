@@ -46,6 +46,15 @@ const firstApproach = () => {
 console.log("firstApproach", firstApproach());
 
 /**
+ This algorithm takes in two arrays, arrayOne and arrayTwo. It then searches through both
+ arrays and finds the two elements whose absolute difference is smallest. It does this by
+ comparing each element in arrayOne to each element in arrayTwo and calculating the absolute
+ difference between them. It keeps track of the smallest difference it has found so far and
+ the two elements that gave it that difference. Once it has searched through both arrays, it
+ returns an array containing these two elements.
+ */
+
+/**
  * O(nlog(n) + mlog(m)) time | O(1) space
  */
 const secondApproach = () => {
@@ -74,3 +83,34 @@ const secondApproach = () => {
 };
 
 console.log("secondApproach", secondApproach());
+
+/**
+ 1. The algorithm finds the pair of numbers, one from each of the two input arrays, that have the smallest
+ absolute difference between them. Here's how it works:
+
+2. The two input arrays, arrayOne and arrayTwo, are sorted in ascending order using the sort method with a
+ comparison function that returns the difference between the two values being compared.
+
+3. Two indices, idxOne and idxTwo, are initialized to 0.
+
+4. A variable smallestDiff is initialized to Infinity.
+
+5. A variable result is initialized to an empty array.
+
+6. A while loop is used to iterate over the two arrays, as long as the indices idxOne and idxTwo are both
+ less than the length of their respective arrays.
+
+7. At each iteration of the loop, the absolute difference between the current element of arrayOne and the
+current element of arrayTwo is computed and stored in the variable diff.
+
+8. If diff is 0, meaning the two elements are equal, the function returns an array containing those two elements.
+
+9. Otherwise, if diff is less than smallestDiff, smallestDiff is updated to diff, and result is updated to an array
+containing the current elements from arrayOne and arrayTwo.
+
+10. If the current element of arrayOne is less than the current element of arrayTwo, idxOne is incremented.
+
+11. Otherwise, idxTwo is incremented.
+
+12 . Once the loop has finished, result contains the pair of elements from the two arrays with the smallest absolute difference between them, and that pair is returned.
+ */

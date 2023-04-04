@@ -45,3 +45,16 @@ const firstApproach = () => {
 };
 
 console.log("firstApproach", firstApproach());
+
+/**
+1. Initialize two pointers, 'left' and 'right', to the start and end of the array respectively.
+
+2. While the 'left' pointer is less than the 'right' pointer, repeat the following steps:
+a. Move the 'right' pointer to the left until it encounters an element that is not equal to the 'toMove' value.
+b. If the element at the 'left' pointer is equal to the 'toMove' value, swap it with the element at the 'right' pointer.
+c. Move the 'left' pointer to the right.
+
+3.Return the modified array with all occurrences of the 'toMove' value moved to the end.
+
+The intuition behind the algorithm is that it maintains two pointers at opposite ends of the array and swaps elements as needed to move all occurrences of the 'toMove' value to the end. By moving the 'right' pointer to the left until it reaches a non-'toMove' value, it ensures that the elements swapped to the end are not already in the correct position. The 'left' pointer is used to iterate through the array and identify elements that need to be swapped. By incrementing the 'left' pointer once an element has been swapped or is not equal to 'toMove', the algorithm ensures that each element is processed only once.
+ */

@@ -38,3 +38,13 @@ const firstApproach = () => {
 };
 
 console.log("firstApproach", firstApproach());
+
+/**
+We start by initializing an empty set sums and a variable sum to 0. We then iterate through each
+element num in the array nums, adding it to the current sum sum. If the sum is equal to 0 or if
+we have seen that sum before (i.e., sums already contains sum), then we know that there is a
+subarray that sums to 0, so we return true. Otherwise, we add the sum to the sums set to keep
+track of it and continue iterating through the array.
+
+If we reach the end of the loop and have not found a subarray that sums to 0, we return false.
+ */

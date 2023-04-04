@@ -43,3 +43,12 @@ const firstApproach = (array, sequence) => {
 };
 
 console.log("firstApproach", firstApproach(array, sequence));
+
+/**
+The intuition behind this code is to check whether the given array contains the given sequence
+as a subsequence. The code initializes a count variable to 0 and loops through the array. If the
+current element of the array matches the count-th element of the sequence, count is incremented.
+Once count equals the length of the sequence, the function returns true, indicating that the array
+contains the sequence. If the loop completes and count does not equal the length of the sequence,
+the function returns false, indicating that the array does not contain the sequence.
+ */

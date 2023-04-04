@@ -69,3 +69,22 @@ console.log("firstApproach", firstApproach());
  * If we didn't update i in this way, we would end up examining the elements in
  * the current peak again in the next iteration of the loop, which would be redundant
  */
+
+/**
+1. The algorithm works by iterating through the input array, and at each index checking if the current
+element is a peak (i.e., greater than its neighboring elements). If it's not a peak, the algorithm
+simply moves on to the next element.
+
+2. If the current element is a peak, the algorithm starts expanding to the left and right to find the
+left and right boundaries of the peak. It does this by looking for decreasing elements to the left
+of the peak and increasing elements to the right of the peak.
+
+3. Once the left and right boundaries of the peak have been found, the algorithm calculates the length
+of the peak (i.e., the number of elements between the left and right boundaries) and updates the
+longest peak length if the current peak is longer.
+
+4. The intuition behind the algorithm is that a peak is a sequence of elements that starts with an
+increasing sequence and ends with a decreasing sequence. By looking for the left and right boundaries
+of the peak, the algorithm is able to determine the length of the peak and update the longest peak length
+if necessary.
+ */

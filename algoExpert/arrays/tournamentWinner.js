@@ -82,3 +82,23 @@ const firstApproach = () => {
 };
 
 console.log("firstApproach", firstApproach());
+
+/**
+1. This function is implementing a scoring system for a set of competitions, where each competition
+involves two teams, and the winner earns 3 points, while the loser earns 0 points.
+
+2. The function takes in two arrays as arguments: competitions, which contains arrays representing each
+competition with the names of the two teams, and results, which is an array of integers representing the
+winner of each competition (0 for the second team, and 1 for the first team).
+
+3. The function creates an empty object called scoreboard to store the scores of each team. It then
+iterates over each competition using the map method, and calculates the winner's index and name
+based on the results array. It then updates the scoreboard object to add 3 points to the winner's
+score or create a new score for the winner if they are not in the scoreboard object.
+
+4. The function also keeps track of the current leader (i.e., the team with the highest score) by
+comparing each team's score to the leader object's score. If a team's score is greater than the
+current leader score, then the leader object is updated with the new leader's name and score.
+
+5. Finally, the function returns the name of the team with the highest score (i.e., the leader).
+ */

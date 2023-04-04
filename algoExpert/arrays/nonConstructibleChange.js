@@ -39,3 +39,19 @@ const firstApproach = () => {
 };
 
 console.log(firstApproach());
+
+/**
+1. Set minimumChange to 0.
+
+2. If the coins array is empty, return 1.
+
+3. Sort the coins array in ascending order.
+
+4. If the first coin is not 1, return 1 (since we cannot form a 1-cent coin using the given coins).
+
+5. Loop through each coin in the coins array:
+a. Check if the current coin is greater than minimumChange + 1. If it is, return minimumChange + 1 (since we cannot form minimumChange + 1 using the given coins).
+b. Otherwise, add the current coin to minimumChange.
+
+6. If we reach the end of the loop, return minimumChange + 1, since we were able to form all values up to minimumChange.
+ */

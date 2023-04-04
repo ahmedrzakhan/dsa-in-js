@@ -77,6 +77,18 @@ const secondApproach = (array, targetSum) => {
 console.log("secondApproach", secondApproach(array, targetSum));
 
 /**
+The code creates an empty array result to store the output pairs and an empty object records to keep
+track of the numbers that have been seen so far.
+
+It then loops through each number in the array and checks if the complement (i.e., targetSum - array[i])
+has been seen before in the records object. If the complement is found, it means that a pair that adds
+up to the target sum has been found, and it is added to the result array. Otherwise, the current number
+is added to the records object.
+
+Finally, the function returns the result array containing all the pairs of numbers that add up to the target sum.
+ */
+
+/**
  * approach 3
  * tc: O(nlogn) sc: O(1)
  * sort array start pointer from both the sides
@@ -102,3 +114,15 @@ const thirdApproach = (array, targetSum) => {
 };
 
 console.log("thirdApproach", thirdApproach(array, targetSum));
+
+/**
+1. The basic idea is to initialize two pointers at the beginning and end of the array, and then move them
+towards each other until they meet in the middle.
+
+2. At each iteration, we calculate the sum of the numbers pointed by the two pointers, and compare it with
+the target sum. If the sum is less than the target sum, we increment the left pointer to increase the sum,
+and if the sum is greater than the target sum, we decrement the right pointer to decrease the sum.
+
+3. The algorithm terminates either when we find a pair of numbers whose sum is equal to the target sum, or when
+the left pointer crosses the right pointer, in which case there is no such pair in the array.
+ */

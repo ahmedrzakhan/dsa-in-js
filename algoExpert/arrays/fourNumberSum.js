@@ -77,18 +77,23 @@ value. Here's how the algorithm works:
 
 1. Initialize an empty object called allPairs to store pairs of integers and an empty array called
  quadruplets to store the quadruplets.
+
 2. Loop through all possible pairs of distinct integers in the array (using nested loops).
+
 3. For each pair, calculate the sum of the two integers and the difference between the target sum
  and the current sum.
+
 4. If the difference is in the allPairs object, this means that there is at least one pair of
 integers whose sum is equal to the difference, and adding the current pair to that pair would
 make a quadruplet whose sum is equal to the target sum. So, for each pair in allPairs[difference],
 create a new quadruplet by concatenating that pair with the current pair (i.e., the pair in the
 outer loop), and add the resulting quadruplet to the quadruplets array.
+
 5. Next, loop through all pairs of integers that come before the second integer in the outer loop.
 For each of these pairs, calculate their sum and add them to the allPairs object if their sum is
 not already in the object. If their sum is already in the object, add the current pair (i.e.,
 the pair in the outer loop) to the array of pairs whose sum is equal to the current sum.
+
 6. Once all possible quadruplets have been checked, return the quadruplets array.
 Note that the algorithm uses the allPairs object to keep track of pairs of integers whose sum is
 equal to a certain value. This allows the algorithm to quickly check if there is a pair of integers

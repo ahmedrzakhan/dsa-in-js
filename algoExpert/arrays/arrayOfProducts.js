@@ -46,3 +46,29 @@ const firstApproach = () => {
 };
 
 console.log("firstApproach", firstApproach());
+
+/**
+ This algorithm is used to find the product of all elements in an array except for the element
+ at each index. The basic idea is to compute the product of all elements to the left of each index,
+  and then multiply that by the product of all elements to the right of each index.
+
+Here's how it works:
+
+1. We start by initializing a new array called result with n elements, where n is the length of
+the input array. We also initialize a variable called leftProduct to 1.
+
+2. We loop over the input array from left to right using a for loop. For each element at index i,
+ we multiply the corresponding element in the result array by leftProduct, and then update
+ leftProduct to include the current element in the input array.
+
+3. We then initialize a variable called rightProduct to 1.
+
+4. We loop over the input array again, but this time from right to left using a for loop. For
+each element at index i, we multiply the corresponding element in the result array by rightProduct,
+and then update rightProduct to include the current element in the input array.
+
+5. After we've finished looping over the input array, the result array will contain the product of
+all elements in the input array except for the element at each index.
+
+6. Finally, we return the result array.
+ */
